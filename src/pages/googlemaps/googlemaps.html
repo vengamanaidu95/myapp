@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      map
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="addMarker()"><ion-icon name="add"></ion-icon>Add Marker</button>
+    </ion-buttons>  
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content>
+ <ul>
+   <li *ngFor="let place of places">{{ place.title }}</li>
+ </ul>
+</ion-content>

@@ -1,0 +1,24 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Add weather</ion-title>
+    <ion-buttons end>
+      <button royal (click)="dismiss()">
+      <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<form (ngSubmit)="onAddPlace(f.value)" #f="ngForm">
+  <ion-item>
+    <ion-label>Title</ion-label>
+    <ion-input type="text" name="title" ngModel required></ion-input>
+  </ion-item>
+  <button ion-button block type="submit" [disabled]="!f.valid">Add value</button>
+</form>
+</ion-content>

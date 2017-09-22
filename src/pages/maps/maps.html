@@ -1,0 +1,20 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>maps</ion-title>
+  </ion-navbar>
+  
+</ion-header>
+
+
+<ion-content padding>
+
+<form>
+  <div class="form-group ">
+									<input type="text" class="form-control " name="latitude" [(ngModel)]="latitude" placeholder="Enter the Latitude"/>
+                  <input type="text" class="form-control" name="longitude" [(ngModel)]="longitude" placeholder="Enter the Longitude"/>  
+                  <button type="button" ion-button round outline class="btn btn-primary btn-lg btn-block login-button" (click)="submit()">submit</button>
+                  </div>
+</form>
+                <div #map id="map"></div>
+</ion-content>

@@ -1,0 +1,38 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>permutations</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<h3> A permutation is the choice of r things from a set of n things without replacement. Order matters in permutation.</h3>
+<p>npr=n!/(n-r)!</p><p>
+<th>Let us assume that there are r boxes and each of them can hold one thing. There will be as many permutations as there are ways of filling in r vacant boxes by n objects.</th> </p>
+
+<p>No. of ways first box can be filled: n</p> 
+
+<p>No. of ways second box can be filled: (n – 1)</p> 
+
+<p>No. of ways third box can be filled: (n – 2)</p> 
+
+<p>No. of ways fourth box can be filled: (n – 3)</p> 
+
+<p>No. of ways rth box can be filled: (n – (r – 1))</p> 
+
+<p><th>Therefore, no. of ways of filling in r boxes in succession can be given by:</th></p> 
+
+<p>n (n – 1) (n – 2) (n-3) . . . (n – (r – 1))</p> 
+
+<p>This can be written as:</p> 
+
+<p>n (n – 1) (n – 2) … (n – r + 1)</p> 
+
+<p><th>The no. of permutations of n different objects taken r at a time, where 0  r £ n and the objects do not repeat is n (n – 1) (n – 2) (n – 3) . . . (n – r + 1).</th></p> 
+
+<p>⇒   nPr= n ( n – 1) ( n – 2)( n – 3). . .( n – r + 1)</p> 
+
+</ion-content>

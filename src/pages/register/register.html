@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <!-- <button ion-button ion-only (click)="funct()"><ion-icon ios="ios-options" md="md-add"></ion-icon></button> -->
+    </ion-buttons>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+ <ion-content padding>
+<!-- <h2 class="positive">Register</h2> -->
+  <div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">Your Name</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="name" [(ngModel)]="name" placeholder="Enter your Name" required>
+								</div>
+							</div>
+						</div>
+  <div class="form-group">
+							<label for="password" class="cols-sm-2 control-label">Email</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="email" [(ngModel)]="email"  placeholder="Enter your Email" required>
+								</div>
+							</div>
+						</div>
+ <div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">password</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" name="password" [(ngModel)]="password"  placeholder="Enter your password" required>
+								</div>
+							</div>
+						</div>
+  <div class="form-group">
+							<label for="password" class="cols-sm-2 control-label">Password</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" name="cpassword" [(ngModel)]="cpassword"  placeholder="Enter your conform Password" required>
+								</div>
+							</div>
+						</div>
+   <div class="form-group">
+							<label for="password" class="cols-sm-2 control-label">Phone</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="phone" [(ngModel)]="phone"  placeholder="Enter your phone no" required>
+								</div>
+							</div>
+						</div>
+	<div class="form-group">
+		<table border="0"><tr>
+			                 <th>Gender :</th> 
+			                 <td>Male</td>
+			                 <td><ion-checkbox [(ngModel)]="male"></ion-checkbox></td>
+				             <td>Female</td><td><ion-checkbox [(ngModel)]="female"></ion-checkbox></td>
+						 </tr>
+		</table>
+	</div>
+	<div class="form-group">
+	     <button type="button" ion-button round outline class="btn btn-small btn-lg btn-block login-button" (click)="regi()">Register</button>
+    </div>
+ </ion-content> 
